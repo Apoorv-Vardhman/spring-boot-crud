@@ -12,4 +12,11 @@ import java.util.List;
 public interface StudentService {
     List<Student> findAllStudents();
     Student createStudent(Student student);
+    Student findByEmail(String email);
+
+    Student updateStudent(Student student);
+
+    void delete(Student student);
+
+    Student findById(Long id);
 }
